@@ -5,6 +5,10 @@
 
 2) How to play. 
     With Wordle you have a six chances to guess a pre-chosen five letter word. As you play the code gives you hints when you have the correct letters and more hints if you have the letter(s) in the correct spot in the word. 
+
+    ** clean up this description after game is built and functioning
     
 3) Technologies I could use:
-    -HTML, CSS, arrays, math.random, event.listeners, if/else statements, API(for word generators and/dictionaries)?
+    - HTML
+    - CSS: flex box, colors, fonts 
+    - JavaScript: arrays, math.random, event.listeners, if/else statements, API(for word generators and/dictionaries)?s

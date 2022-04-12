@@ -1,0 +1,14 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    /* color: Pick a text color after backgorund color. etc are chosen; */
+}
+
+body {
+    /* background-color: pick one */
+    text-align: center;
+}
+
+.title {
+    font-size: 36px;
+    letter-spacing: 4px;
+}
