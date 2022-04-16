@@ -1,6 +1,5 @@
 * {
     font-family: 'Montserrat', sans-serif;
-    /* color: Pick a text color after backgorund color. etc are chosen; */
 }
 
 body {
@@ -12,6 +11,7 @@ h1 {
     font-size: 60px;
     letter-spacing: 10px;
     color: #6A0000;
+    /* style h1 with scrabble look, letters in tiles and tiles a bit askew?? */
 } 
 
 .word-reveal {
@@ -21,7 +21,6 @@ h1 {
 #gameBoard {
     width: 350px;
     height: 420px;
-    /* background-color: aqua; */
     display: flex; 
     flex-wrap: wrap;
     align-items: center;
@@ -59,7 +58,7 @@ h1 {
 .key {
     font-family: 'Montserrat', sans-serif;
     color: #E64722;
-    font-size: 20px;;
+    font-size: 25px;;
     font-weight: 700;
     height: 60px;
     width: 60px;
@@ -70,10 +69,24 @@ h1 {
      
 }
 
-.special-key {
+.enter {
     font-family: 'Montserrat', sans-serif;
     color: #E64722;
     font-size: 20px;;
+    font-weight: 700;
+    height: 60px;
+    width: 100px;
+    margin: 2px;
+    border: 1px solid #6A0000;
+    border-radius: 5px;
+    background-color: #fdfff5;
+     
+}
+
+.delete {
+    font-family: 'Montserrat', sans-serif;
+    color: #E64722;
+    font-size: 30px;;
     font-weight: 700;
     height: 60px;
     width: 100px;
