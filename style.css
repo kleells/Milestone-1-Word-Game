@@ -96,3 +96,20 @@ h1 {
     background-color: #fdfff5;
      
 }
+
+.correctSpot {
+    background-color: #009600;
+    color: #fdfff5;
+    border-color: #EDE9D0;
+}
+
+.inWord {
+    background-color: #FFC300 ;
+    color: #fdfff5;
+    border-color: #EDE9D0;
+}
+
+.notUsed {
+    background-color: #E64722;
+    color: #fdfff5;
+}
