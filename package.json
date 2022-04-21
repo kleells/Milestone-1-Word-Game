@@ -1,0 +1,27 @@
+{
+  "name": "word-game",
+  "version": "1.0.0",
+  "description": "1) Inspiration for a word game     I wanted to do a word game becasue I play a lot of them and have for a long time. I first thought of creating a crossword game but that seems more complicated and possibly beyond my skill set. I then started looking into building a word guess game and started thinking about a game that has become popular recently called Wordle. Wordle has a simple layout and since I am not a designer, I could use CSS and make it look how I'd like without a lot of art skills. The words are generated randomly so writing code to generate them would be needed. The HTML document would need columns and rows(potentially) and would not be overly complex allowing me to focus on the JavaScript portion.",
+  "main": "app.js",
+  "scripts": {
+    "start:backend": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kleells/Milestone-1-Word-Game.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kleells/Milestone-1-Word-Game/issues"
+  },
+  "homepage": "https://github.com/kleells/Milestone-1-Word-Game#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}

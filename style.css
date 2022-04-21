@@ -10,11 +10,11 @@ body {
 h1 {
     font-size: 60px;
     letter-spacing: 10px;
-    color: #6A0000;
+    color: #2F4858;
     /* style h1 with scrabble look, letters in tiles and tiles a bit askew?? */
 } 
 
-.word-reveal {
+.revealWord {
     height: 70px;
 }
 

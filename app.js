@@ -1,12 +1,30 @@
-let wordGuess = 6;
-let wordLength = 5;
-
-let currentRow = 0;
-let currentTile = 0;
+//TODO: Dictionary for non-words Ania 1:19:25, mouse click keyboard, keyboard tiles change colors to know which were used, README document updates, style WORDLE title
 
 
-let gameOver = false;
+var wordGuess = 6;
+var wordLength = 5;
 
+var currentRow = 0;
+var currentTile = 0;
+
+var gameOver = false;
+
+var solution
+
+// random word API
+// in terminal enter "npm run start:backend"
+function getWord() {
+    fetch('http://localhost:4000/word')
+        .then(response => response.json())
+        .then(json => {
+            console.log(json)
+            solution = json.toUpperCase()
+        })
+        .catch(err => console.log(err))
+}
+getWord()
+
+// load tiles board
 window.onload = function(){
     gameTiles();
 }
@@ -25,11 +43,38 @@ function gameTiles() {
     }
 }
 
-// Event listener for mouse clicks
+
+// Event listener for mouse clicks(this shows up in the console)
 function keyHandle(key) {
     var keyLetter = key.getAttribute("data-key");
     console.log(key.innerHTML);
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //mouseclicks adding letters to game board, remove this block to ensure game functions if errors occur
+    document.addEventListener("click", mouseClick)
   }
+// commented oput code is from the boy 
+//   function handleMouseClick(e) {
+//     if (e.target.matches("[data-key]")) {
+//       pressKey(e.target.dataset.key)
+//       return
+//     }
+  
+//     if (e.target.matches("[data-enter]")) {
+//       submitGuess()
+//       return
+//     }
+  
+//     if (e.target.matches("[data-delete]")) {
+//       deleteKey()
+//       return
+//     }
+//   }
+
+  function mouseClick(event) {
+
+  }
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Event listener for key strokes ATTEMPT 1 (all keys and delete work but enter does not)
 document.addEventListener("keyup", function(KeyBoardEvent) {
@@ -98,9 +143,3 @@ function checkGuess() {
         }
     }
 }
-
-
- 
-
-
-
