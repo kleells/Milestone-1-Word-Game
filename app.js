@@ -1,6 +1,3 @@
-//TODO: Dictionary for non-words Ania 1:19:25, mouse click keyboard, keyboard tiles change colors to know which were used, README document updates, style WORDLE title
-
-
 var wordGuess = 6;
 var wordLength = 5;
 
@@ -43,38 +40,13 @@ function gameTiles() {
     }
 }
 
+// add function to color tiles that have been used
 
 // Event listener for mouse clicks(this shows up in the console)
 function keyHandle(key) {
     var keyLetter = key.getAttribute("data-key");
     console.log(key.innerHTML);
-
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    //mouseclicks adding letters to game board, remove this block to ensure game functions if errors occur
-    document.addEventListener("click", mouseClick)
-  }
-// commented oput code is from the boy 
-//   function handleMouseClick(e) {
-//     if (e.target.matches("[data-key]")) {
-//       pressKey(e.target.dataset.key)
-//       return
-//     }
-  
-//     if (e.target.matches("[data-enter]")) {
-//       submitGuess()
-//       return
-//     }
-  
-//     if (e.target.matches("[data-delete]")) {
-//       deleteKey()
-//       return
-//     }
-//   }
-
-  function mouseClick(event) {
-
-  }
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+}
 
 // Event listener for key strokes ATTEMPT 1 (all keys and delete work but enter does not)
 document.addEventListener("keyup", function(KeyBoardEvent) {
@@ -118,7 +90,7 @@ function inputLetter (KeyBoardEvent) {
     }
 }
 
-
+// add functions that give hints to how many times letter is used
 function checkGuess() {
     let correctSpot = 0;
 

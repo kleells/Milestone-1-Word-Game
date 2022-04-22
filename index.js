@@ -29,4 +29,7 @@ app.get('/word', (req, res) => {
     })
 })
 
+// DICTIONARY API
+
+
 app.listen(PORT, () => console.log('Server running on port ' + PORT))

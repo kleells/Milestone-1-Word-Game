@@ -11,11 +11,13 @@ h1 {
     font-size: 60px;
     letter-spacing: 10px;
     color: #2F4858;
-    /* style h1 with scrabble look, letters in tiles and tiles a bit askew?? */
 } 
 
-.revealWord {
+#revealWord {
     height: 70px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #009600;
 }
 
 #gameBoard {

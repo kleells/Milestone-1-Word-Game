@@ -11,4 +11,4 @@
 3) Technologies I could use:
     - HTML
     - CSS: flex box, colors, fonts 
-    - JavaScript: arrays, math.random, event.listeners, if/else statements, for loops, API(word generators and/dictionaries)?s
+    - JavaScript: arrays, math.random, event.listeners, if/else statements, for loops, API(word generators and/dictionaries)
